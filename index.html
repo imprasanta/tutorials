@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jquery - Learning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div style="margin: 0px 0"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2>Jquery Learning</h2><hr>
+				<img src="img/Google.png" class="img-responsive" alt="google">
+				<p>The primary purpose of custom properties is to define cascading variables. In CSS, a cascading variable is a value that can be substituted into .</p>
+				<a style="margin: auto" href="">Google</a><hr>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="name">Enter Text here</label>
+					<input type="text" name="" class="form-control" value="Enter Name">
+				</div>
+				<button class="btn btn-danger" id="submit">Submit</button>
+				<button class="btn btn-info">Change Label</button>
+				<a class="btn btn-success" href="http://localhost/jquery/">LINK</a>
+			</div> 
+		</div>
+	</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function() {
+		var name = $('input[type=text]').val();
+		$('#submit').on('click', function() {
+			$('input[type=text]').val("sdfhkj");
+		});
+		$('#submit').on('click', function() {
+			$(this).empty();
+		});
+	});
+	
+</script>
+
+</body>
+</html>
